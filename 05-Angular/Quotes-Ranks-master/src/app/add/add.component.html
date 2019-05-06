@@ -1,0 +1,22 @@
+<h1>Add a quote</h1>
+<form (submit)="callParent()">
+  <tr>
+    <td>
+      <textarea rows="6" cols="100" name="content" required minlength="4" [(ngModel)]="quote.content" #content = "ngModel"></textarea>
+    </td>
+    <td style="color: red" *ngIf="!content.valid">Quote must be 4 characters</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;"> 
+      Author:<input type="text" name="author" required minlength="1" [(ngModel)]="quote.author" #author = "ngModel" >
+    </td>
+  <td style="color: red" *ngIf="!author.valid">Author name must be 1 character</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">
+      <input type="submit" value="submit">
+    </td>
+    <td></td>
+  </tr>
+</form>
+<p *ngFor="let q of qupotes">{{q}}</p>

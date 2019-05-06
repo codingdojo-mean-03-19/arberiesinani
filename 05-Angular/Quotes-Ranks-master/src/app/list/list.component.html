@@ -1,0 +1,26 @@
+<h1> Quotes List</h1>
+<div *ngFor="let q of myQuotes">
+<div class="disp">
+  <div class="cont">
+    <p>{{q.content}}</p>
+    <p>{{q.author}}</p>
+  </div>
+  <div class="score">
+    <h1 style="display: inline-block" *ngIf="q.likes > 0">+</h1 >
+    <h1 style="display: inline-block">{{q.likes}}</h1>
+  </div>
+  <div class="butts">
+    <br>
+    <form (submit)="voteUP(q)">
+      <input class="thing" type="submit" style="background-color:lightgreen" value="Vote Up">
+    </form>
+    <form (submit)="voteDOWN(q)">
+      <input class="thing" type="submit" style="background-color:lightcoral"value="Vote Down">
+    </form>
+    <form (submit)="del(q)">
+      <input class="thing" type="submit" style="background-color:#333333; color: white" value="Delete">
+    </form>
+  </div>
+</div>
+<br>
+</div>

@@ -1,0 +1,32 @@
+.disp{
+    margin: 0px auto;
+    width: 95%;
+    height: 150px;
+    border: 1px solid black;
+}
+.cont{
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    vertical-align: top;
+}
+.score{
+    display: inline-block;
+    height: 100%;
+    width: 19%;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.butts{
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    vertical-align: top;
+    text-align: center;
+}
+.thing{
+    height: 35px;
+    width: 70%;
+}

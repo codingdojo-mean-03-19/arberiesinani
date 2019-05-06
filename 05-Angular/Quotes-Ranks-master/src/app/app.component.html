@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div id="top">
+  <app-add (myEvent)="invoke($event)"></app-add>
+</div>
+<div id="bot">
+  <app-list [myQuotes]="quotes" (updateEvent)="update($event)"></app-list>
+</div>

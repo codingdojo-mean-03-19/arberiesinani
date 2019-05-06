@@ -1,0 +1,12 @@
+#top{
+    height: 350px;
+    width: 85%;
+    margin:0px auto;
+    background-color: green
+}
+#bot{
+    height: 650px;
+    width: 85%;
+    margin:0px auto;
+    background-color: yellow;
+}
